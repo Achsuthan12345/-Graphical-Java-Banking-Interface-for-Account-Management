@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.CustomerLoginController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="436.0" prefWidth="738.0" style="-fx-background-color: #30a143;">
+         <children>
+            <Text fill="#fff9f9" layoutX="278.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer" wrappingWidth="182.375">
+               <font>
+                  <Font name="Microsoft Himalaya" size="69.0" />
+               </font>
+            </Text>
+            <ImageView cache="true" cacheHint="SCALE" depthTest="ENABLE" fitHeight="90.0" fitWidth="108.0" style="-fx-blend-mode: #30a143;">
+               <image>
+                  <Image url="@TD.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fff9f9" layoutX="340.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="78.375">
+               <font>
+                  <Font name="Microsoft Himalaya" size="38.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="password" alignment="CENTER" layoutX="298.0" layoutY="280.0" prefHeight="49.0" prefWidth="162.0" />
+            <TextField fx:id="username" alignment="CENTER" layoutX="298.0" layoutY="224.0" prefHeight="47.0" prefWidth="162.0" />
+            <Text fill="#fff9f9" layoutX="161.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="116.375">
+               <font>
+                  <Font name="Microsoft Himalaya" size="38.0" />
+               </font>
+            </Text>
+            <Text fill="#fff9f9" layoutX="165.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="108.0">
+               <font>
+                  <Font name="Microsoft Himalaya" size="38.0" />
+               </font>
+            </Text>
+            <Button fx:id="button" layoutX="351.0" layoutY="345.0" mnemonicParsing="false" onAction="#userLogin" prefHeight="32.0" prefWidth="56.0" text="Login">
+               <font>
+                  <Font name="Microsoft Himalaya" size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="label" alignment="CENTER" layoutX="253.0" layoutY="199.0" prefHeight="17.0" prefWidth="252.0" textAlignment="CENTER" textFill="#fff8f8" />
+            <Text fill="#fff9f9" layoutX="14.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TD" wrappingWidth="123.0">
+               <font>
+                  <Font name="Microsoft Himalaya" size="96.0" />
+               </font>
+            </Text>
+            <Button fx:id="back" layoutX="22.0" layoutY="386.0" mnemonicParsing="false" onAction="#goBack" prefHeight="34.0" prefWidth="135.0" text="Back">
+               <font>
+                  <Font name="Microsoft Himalaya" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

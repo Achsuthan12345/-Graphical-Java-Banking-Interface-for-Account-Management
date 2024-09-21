@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.MainPageController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="738.0" style="-fx-background-color: #30a143;">
+         <children>
+            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <Text fill="#fff9f9" layoutX="195.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a User" wrappingWidth="383.375">
+               <font>
+                  <Font name="Microsoft Himalaya" size="93.0" />
+               </font>
+            </Text>
+            <ImageView cache="true" cacheHint="SCALE" depthTest="ENABLE" fitHeight="90.0" fitWidth="108.0" style="-fx-blend-mode: #30a143;">
+               <image>
+                  <Image url="@TD.png" />
+               </image>
+            </ImageView>
+            <Text fill="#fff9f9" layoutX="14.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TD" wrappingWidth="123.0">
+               <font>
+                  <Font name="Microsoft Himalaya" size="96.0" />
+               </font>
+            </Text>
+            <Button fx:id="button" layoutX="315.0" layoutY="223.0" mnemonicParsing="false" onAction="#switchToManagerLogin" prefHeight="54.0" prefWidth="123.0" text="Manager">
+               <font>
+                  <Font name="Microsoft Himalaya" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="button1" layoutX="315.0" layoutY="293.0" mnemonicParsing="false" onAction="#switchToCustomerLogin" prefHeight="54.0" prefWidth="123.0" text="Customer">
+               <font>
+                  <Font name="Microsoft Himalaya" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
